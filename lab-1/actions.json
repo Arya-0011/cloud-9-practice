@@ -1,0 +1,8 @@
+[
+    {
+        "Type": "forward",
+        "ForwardConfig": {
+            "TargetGroups": [ { "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:208440353575:targetgroup/hello-server-tg/e4c8e827282e3cbf" } ]
+        }
+    }
+]

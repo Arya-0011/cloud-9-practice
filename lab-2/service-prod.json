@@ -1,0 +1,18 @@
+{
+    "taskDefinition": "hello-server-prod:1",
+    "cluster": "prod",
+    "loadBalancers": [
+        {
+            "targetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:208440353575:targetgroup/hello-server-blue/f14220b51d63b14e",
+            "containerName": "hello-server",
+            "containerPort": 80
+        }
+    ],
+    "desiredCount": 3,
+    "launchType": "EC2",
+    "schedulingStrategy": "REPLICA",
+    "deploymentController": {
+        "type": "CODE_DEPLOY"
+    },
+    "healthCheckGracePeriodSeconds": 8
+}
